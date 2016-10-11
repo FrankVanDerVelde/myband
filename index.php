@@ -21,8 +21,8 @@ $templateParser->display('head.tpl');
 // Get newsarticles from database
 include('model/select_newsarticles.php');
 
-// Show newsarticles 'old style' => refactor to template system.
-include('views/newsarticles.php');
+$templateParser->assign('result', $result);
+$templateParser->display('newsarticles.tpl');
 
 $templateParser->display('footer.tpl');
 
