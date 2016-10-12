@@ -1,4 +1,4 @@
-<p>About</p>
+<p>Contact</p>
 <section>
 
 </section>

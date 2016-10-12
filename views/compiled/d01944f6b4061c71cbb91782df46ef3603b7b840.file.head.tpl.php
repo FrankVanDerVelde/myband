@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-09-28 14:41:36
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-12 15:34:52
          compiled from "views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1711657e4f5509b6103-51375259%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd01944f6b4061c71cbb91782df46ef3603b7b840' => 
     array (
       0 => 'views\\head.tpl',
-      1 => 1475066262,
+      1 => 1476279290,
       2 => 'file',
     ),
   ),
@@ -36,4 +36,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     </head>
     <body>
+		<header>
+			<p>Dit is mijn menu</p>
+		<ul>
+		<li><a href="?action=home">Home</a></li>
+		<li><a href="?action=champions">Champions</a></li>
+		<li><a href="?action=e-sport">E-Sport</a></li>
+		<li><a href="?action=about">About</a></li>
+		<li><a href="?action=contact">Contact</a></li>
+		</ul>
+		</header>
 <?php }} ?>

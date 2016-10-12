@@ -17,12 +17,37 @@ $templateParser->assign('title', 'Me First And The Gimme Gimmes');
 // Display template: output html
 $templateParser->display('head.tpl');
 
+$action = isset($_GET['action'])?$_GET['action']:'about';
 
-// Get newsarticles from database
-include('model/select_newsarticles.php');
+	switch ($action) {
+		case 'home':
+			// get newsarticles fromd database
+			include('model/select_newsarticles.php');
+			$templateParser->assign('result', $result);
+			$templateParser->display('newsarticles.tpl');
+			break;
+				
+			case 'champions':
+			$templateParser->display('champions.tpl');
+			break;
+			
+			case 'e-sport':
+			$templateParser->display('e-sport.tpl');
+			break;
+			
+			case 'about':
+			$templateParser->display('about.tpl');
+			break;
+			
+			case 'contact':
+			$templateParser->display('contact.tpl');
+			break;
+	}
 
-$templateParser->assign('result', $result);
-$templateParser->display('newsarticles.tpl');
+
+
+
+
 
 $templateParser->display('footer.tpl');
 

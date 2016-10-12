@@ -1,5 +1,5 @@
 <footer>
- <p>Justin houd van god joey van botermessen en mauro van Romy</p>
+ <p>Dit is de footer</p>
 
 
 

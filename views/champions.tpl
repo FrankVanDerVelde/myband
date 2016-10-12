@@ -1,4 +1,4 @@
-<p>About</p>
+<p>Champions</p>
 <section>
 
 </section>
